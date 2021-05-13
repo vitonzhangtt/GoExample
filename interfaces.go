@@ -9,11 +9,13 @@ import "math"
 http://jordanorelli.tumblr.com/post/32665860244/how-to-use-interfaces-in-go
 */
 
+// interface
 type geometry interface {
 	area() float64
 	perim() float64
 }
 
+// struct
 type rect struct {
 	width, height float64
 }
@@ -63,7 +65,14 @@ func main() {
 }
 
 
+/*
+Reference
+====
 
+1. Interfaces in Go
+https://medium.com/rungo/interfaces-in-go-ab1601159b3a
+
+*/
 
 
 
